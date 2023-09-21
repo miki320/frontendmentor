@@ -1,0 +1,101 @@
+@charset "UTF-8";
+/*全体の設定*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 1rem;
+}
+img{
+    max-width: 100%;
+}
+/*背景色、背景画像*/
+body{
+    background-color: hsl(185, 75%, 39%);
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-position: right 52vw bottom 10vh,left 47vw top 50vh;
+    background-repeat: no-repeat,no-repeat;
+    background-size: 70%;
+    /* width: 1440px; */
+}
+/*プロフィール全体の設定*/
+#prof{
+    background-color: white;
+    width: 400px;
+    height: 420px;
+    margin: 130px auto 0 auto;
+    border-radius: 3%;
+    background-image: url(images/bg-pattern-card.svg);
+    background-repeat: repeat-x;
+    padding-top: 80px;
+    background-size: 100%;
+}
+/*人物写真*/
+#victor{
+    width: 30%;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-color: white;
+    text-align: center;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+#victor img{
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    margin-top: 5%;
+}
+/*文字の設定*/
+h2{
+    color: hsl(229, 23%, 23%);
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+h2,p{
+    text-align: center;
+}
+span,p{
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+}
+#london{
+    font-size: 0.875rem;
+}
+/*下部横並び部分*/
+#flex{
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid hsl(0, 0%, 89%);
+    margin-top: 1.875rem;
+    padding-top: 1.875rem;
+}
+
+#flex p{
+    font-size: 0.625rem;
+    letter-spacing: 0.125rem;
+}
+
+
+
+@media screen and (max-width:480px){
+    body{
+        background-position: right 45vw bottom 40vh,left 50vw top 52vh;
+        background-repeat: no-repeat,no-repeat;
+        background-size: 160%;
+    }
+    #prof{
+        width: 330px;
+        height: 370px;
+    }
+    #victor{
+        margin-top: 0.2rem;
+        margin-bottom: 1.1rem;
+    }
+    #flex{
+        margin-top: 1.5rem;
+    }
+}
