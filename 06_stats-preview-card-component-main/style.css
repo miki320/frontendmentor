@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+/* 共通の設定 */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+html{
+    font-size: 1rem;
+}
+img{
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+/* 全体の大きさ、フレックス、共通の文字色、文字の太さ */
+body{
+    background-color: hsl(233, 47%, 7%);
+}
+.container{
+    background-color: hsl(244, 38%, 16%);
+    width: 1100px;
+    margin: 100px auto;
+    border-radius: 10px;
+}
+.flex{
+    display: flex;
+}
+.gray{
+    color: hsla(0, 0%, 100%, 0.6);
+}
+.weight-700{
+    font-weight: 700;
+}
+.weight-400{
+    font-weight: 400;
+}
+
+/* モバイル表示用の画像を非表示 */
+#mobile-image{
+    display: none;
+}
+
+/* 左メイン部分 */
+main{
+    border-radius: 10px 0 0 10px;
+    padding: 75px 130px 30px 70px;
+    flex-basis: 52%;
+}
+h1{
+    color: hsl(0, 0%, 100%);
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+}
+span{
+    color: hsl(277, 64%, 61%);
+}
+.text{
+    font-size: 0.9375rem;
+    line-height: 1.5rem;
+    margin-bottom: 60px;
+}
+.figure{
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.reaction{
+    justify-content: space-between;
+}
+.font-b{
+    font-family: 'Lexend Deca', sans-serif;
+    letter-spacing: 0.06rem;
+    font-size: 0.75rem;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+/* 右画像部分 */
+.image,.image img{
+    border-radius: 0 10px 10px 0;
+}
+.image{
+    flex-basis: 48%;
+    background-color: hsl(277, 81%, 25%);
+}
+.image img{
+    opacity: 0.7;
+}
+
+/* レスポンシブデザイン */
+@media screen and (max-width:480px){
+    /* コンテンツの幅を拡大 */
+    .container{
+        width: 90%;
+    }
+
+    /* フレックスの方向を変更 */
+    .column-reverse{
+        flex-direction: column-reverse;
+    }
+    .column{
+        flex-direction: column;
+    }
+
+    /* デスクトップ用の画像を非表示に、モバイル用の画像を表示 */
+    .desktop-image{
+        display: none;
+    }
+    .mobile-image{
+        display: block;
+    }
+
+    /* 文字をセンター表示 */
+    .center{
+        text-align: center;
+    }
+
+    /* メイン部分 */
+    main{
+        border-radius: 0 0 10px 10px;
+        padding-top: 40px;
+        padding: 40px;
+        padding-bottom: 10px;
+    }
+    h1{
+        font-size: 1.7rem;
+        margin-bottom: 20px;
+    }
+    .text{
+        margin-bottom: 40px;
+    }
+    .image,.image img{
+        border-radius: 10px 10px 0 0;
+    }
+    .reaction{
+        width: 40%;
+        margin: 0 auto;
+    }
+    .font-b:nth-of-type(-n+2){
+        margin-bottom: 30px;
+    }
+
+}
