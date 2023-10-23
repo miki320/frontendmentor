@@ -1,0 +1,152 @@
+@charset "UTF-8";
+/* 共通の設定 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Hanken Grotesk', sans-serif;;
+    font-size: 1rem;
+}
+img{
+    max-width: 100%;
+}
+.flex{
+    display: flex;
+}
+.column{
+    flex-direction: column;
+}
+.center{
+    text-align: center;
+}
+/* コンテンツ部分 */
+#container{
+    width: 700px;
+    margin: 70px auto 0 auto;
+    justify-content: space-around;
+    border-radius: 40px;
+}
+#sec1,#sec2{
+    width: 100%;
+}
+/* 左部分 */
+#sec1{
+    border-radius: 40px;
+    background: linear-gradient(to bottom,hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+}
+h2{
+    font-size: 1.3rem;
+}
+#sec1 h2{
+    color: hsl(241, 100%, 89%);
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+#score{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 30px auto;
+    background: linear-gradient(to bottom,hsla(256, 72%, 46%, 1),hsl(241, 81%, 54%));
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+#score p{
+    color: hsla(241, 100%, 89%,0.7);
+    font-size: 1rem;
+}
+#score p span{
+    color: hsl(0, 0%, 100%);
+    font-size: 4rem;
+    font-weight: 800;
+}
+#evaluation{
+    color: hsl(0, 0%, 100%);
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+#text{
+    width: 65%;
+    margin: 0 auto 50px auto;
+    color: hsl(241, 100%, 89%);
+    font-size: 1rem;
+}
+/* 右部分 */
+#sec2-content{
+    width: 80%;
+    margin: 0 auto;
+}
+#sec2{
+    background-color: hsl(0, 0%, 100%);
+}
+#sec2 h2{
+    padding-top: 30px;
+    margin-bottom: 25px;
+    color: hsl(224, 30%, 27%);
+}
+.item{
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+.item:first-of-type{
+    background-color: hsla(0, 100%, 67%,0.05);
+}
+.item:nth-of-type(2){
+    background-color: hsla(39, 100%, 56%,0.05);
+}
+.item:nth-of-type(3){
+    background-color: hsla(166, 100%, 37%,0.05);
+}
+.item:last-of-type{
+    background-color: hsla(234, 85%, 45%,0.05);
+    margin-bottom: 40px;
+}
+
+.title p{
+    padding-left: 5px;
+}
+#reaction p{
+    color: hsl(0, 100%, 67%);
+}
+#memory p{
+    color: hsl(39, 100%, 56%);
+}
+#verbal p{
+    color: hsl(166, 100%, 37%);
+}
+#visual p{
+    color: hsl(234, 85%, 45%);
+}
+.item{
+    justify-content: space-between;
+}
+#sec2 p{
+    font-weight: 700;
+}
+.sec2-score{
+    color: hsl(224, 30%, 27%);
+}
+.sec2-score span{
+    color: hsla(224, 30%, 27%,0.5);
+}
+#button{
+    background-color: hsl(224, 30%, 27%);
+    color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    text-align: center;
+    padding: 15px;
+}
+
+@media screen and (max-width:480px) {
+    #container{
+        display: flex;
+        flex-direction: column;
+    }
+    #sec1,#sec2{
+        width: 60%;
+        margin: 0 auto;
+    }
+}
