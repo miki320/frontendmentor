@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+/* 共通設定 */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+html{
+    font-size: 1rem;
+}
+img{
+    max-width: 100%;
+}
+
+/* 文字の色、太さ */
+.weight-500{
+    font-weight: 500;
+}
+.weight-700{
+    font-weight: 700;
+}
+.weight-900{
+    font-weight: 900;
+}
+.dark-blue{
+    color: hsl(223, 47%, 23%);
+}
+.blue{
+    color: hsl(245, 75%, 52%);
+}
+.gray{
+    color: hsl(224, 23%, 55%);
+}
+.white{
+    color: white;
+}
+
+/* 文字位置センター、フレックスをまとめて設定 */
+.center{
+    text-align: center;
+}
+.flex{
+    display: flex;
+}
+.column{
+    flex-direction: column;
+}
+
+/* 背景 */
+body{
+    background-color: hsl(225, 100%, 94%);
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0 -22%;
+}
+
+/* コンテンツの位置、大きさ */
+#container{
+    width: 400px;
+    margin: 80px auto;
+    background-color: white;
+    border-radius: 20px;
+}
+main{
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+/* 上部イラスト */
+#illust,#illust img{
+    border-radius: 20px 20px 0 0;
+}
+#illust{
+    margin-bottom: 30px;
+}
+
+/* 表題、テキスト部分 */
+h2{
+    margin-bottom: 20px;
+}
+.text{
+    margin-bottom: 40px;
+    font-size: 0.88rem;
+}
+
+/* ミュージックアイコン部分 */
+.desaturated-blue{
+    background-color: hsl(225, 100%, 98%);
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto 20px auto;
+    padding: 20px;
+    width: 90%;
+    border-radius: 10px;
+}
+.column{
+    margin-left: 10px;
+}
+a{
+    font-size: 0.9rem;
+}
+
+/* ボタン */
+.button{
+    background-color: hsl(245, 75%, 52%);
+    width: 90%;
+    margin: 0 auto 20px auto;
+    border-radius: 10px;
+    line-height: 2.5rem;
+    font-size: 0.85rem;
+    box-shadow: 0 20px 20px hsl(225, 100%, 94%);
+}
+.cancel{
+    font-size: 0.85rem;
+}
+
+/* フレキシブルデザイン */
+@media screen and (max-width:480px) {
+    body{
+        background-image: url(./images/pattern-background-mobile.svg);
+        background-position: 0 0;
+    }
+    #container{
+        width: 330px;
+        margin-top: 40px;
+    }
+}
