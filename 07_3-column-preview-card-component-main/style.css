@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+    font-family: 'Lexend Deca', sans-serif;
+}
+html{
+    font-size: 1rem;
+}
+img{
+    max-width: 100%;
+}
+body{
+    background-color: hsl(31, 77%, 52%);
+    background-color: hsl(184, 100%, 22%);
+    background-color: hsl(179, 100%, 13%);
+    background-color: hsla(0, 0%, 100%, 0.75);
+    background-color: hsl(0, 0%, 95%);
+}
+.flex{
+    display: flex;
+    width: 900px;
+    margin: 100px auto 0 auto;
+    border-radius: 10px;
+}
+section{
+    flex: 1;
+    padding: 45px 50px 40px 40px;
+}
+#sedans{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+}
+#suvs{
+    background-color: hsl(184, 100%, 22%);
+}
+#luxury{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+}
+h1{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.7rem;
+    margin-bottom: 30px;
+}
+.icon{
+    margin-bottom: 30px;
+}
+.text{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 0.9375rem;
+    margin-bottom: 80px;
+    line-height: 1.5rem;
+}
+button{
+    width: 70%;
+    height: 3rem;
+    border: 3px solid hsl(0, 0%, 95%);
+    border-radius: 30px;
+    background-color: hsl(0, 0%, 95%);
+}
+#sedans button{
+    color: hsl(31, 77%, 52%);
+}
+#sedans button:hover{
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+}
+#suvs button{
+    color: hsl(184, 100%, 22%);
+}
+#suvs button:hover{
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+}
+#luxury button{
+    color: hsl(179, 100%, 13%);
+}
+#luxury button:hover{
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+}
+
+@media screen and (max-width:480px){
+    .column{
+        flex-direction: column;
+        width: 330px;
+    }
+    #sedans{
+        border-radius: 10px 10px 0 0;
+    }
+    #luxury{
+        border-radius: 0 0 10px 10px;
+    }
+    section{
+        padding: 45px 55px 50px 40px;
+    }
+
+}
