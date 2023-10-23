@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+/* 共通設定 */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+}
+html{
+    font-size: 1rem;
+}
+img{
+    max-width: 100%;
+}
+.flex{
+    display: flex;
+}
+.white{
+    color: hsl(0, 0%, 100%);
+}
+.blue{
+    color: hsl(178, 100%, 50%);
+}
+.gray{
+    color: hsl(215, 51%, 70%);
+}
+
+/* タイトル：６００、アイコン部分：４００、文章：３００ */
+.weight-300{
+    font-weight: 300;
+}
+.weight-400{
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+.weight-600{
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 1.125rem;
+}
+
+/* 背景色とコンテンツの幅 */
+body{
+    background-color: hsl(217, 54%, 12.5%);
+}
+.contour{
+    width: 380px;
+    margin: 90px auto 0 auto;
+    padding: 20px 0 50px 0;
+    background-color: hsl(217, 54%, 12%);
+    border-radius: 70px;
+}
+.outside{
+    width: 333px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    background-color: hsl(217, 54%, 11%);
+    border-radius: 60px;
+}
+
+
+#container{
+    width: 300px;
+    margin: 0 auto 0 auto;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 15px;
+}
+#inner{
+    width: 87%;
+    margin: 0 auto;
+    padding: 19px 0;
+    border-radius: 5px;
+}
+
+/* トップのイメージ画像 */
+.top-image{
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* 中央テキスト部分 */
+.text{
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+/* 横並びのアイコン部分 */
+.icon{
+    padding-bottom: 15px;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+    justify-content: space-between;
+}
+.icon p{
+    padding-left: 5px;
+}
+
+/* 下部顔写真とテキスト部分 */
+.below{
+    padding-top: 15px;
+}
+.below p{
+    font-size: 0.85rem;
+    line-height: 25px;
+    padding-left: 15px;
+}
+.face-photo{
+    width: 25px;
+}
+.face-photo img{
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%; 
+}
+
+@media screen and (max-width:480px) {
+    .contour{
+        margin-top: 30px;
+    }
+}
